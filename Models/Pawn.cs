@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace Models
 {
-    public class pawn : ChessPiece
+    public class Pawn : ChessPiece
     {
-        public pawn(string name, string chessPos, int color, Tuple<int, int> pos, int ID) : base(name,chessPos, color, pos,ID )
+        public bool movedTwice;
+        public Pawn(string name, string chessPos, int color, Tuple<int, int> pos, int ID) : base(name,chessPos, color, pos,ID )
         {
-
+            movedTwice = false;
         }
     }
 }
